@@ -1,11 +1,11 @@
-CC = gcc
+CC = g++
 DEST = fp_diff
 OBJ = fp_diff.o
 
 $(DEST): $(OBJ)
 	$(CC) -o $(DEST) $(OBJ)
 
-%.o: %.c
+%.o: %.cpp
 	$(CC) -c $< -o $@
 
 clean:
